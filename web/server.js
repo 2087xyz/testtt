@@ -2,7 +2,7 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const bodyParser = require("body-parser");
-
+const licenses = JSON.parse(fs.readFileSync("./web/licenses.json", "utf8"));
 const app = express();
 const PORT = 3000;
 
